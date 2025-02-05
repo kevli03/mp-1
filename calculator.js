@@ -1,9 +1,9 @@
-const num1Input = document.getElementById("first-number").value;
-const num2Input = document.getElementById("second-number").value;
-const num1 = Number(num1Input);
-const num2 = Number(num2Input);
-
 function addition() {
+    const num1Input = document.getElementById("first-number").value;
+    const num2Input = document.getElementById("second-number").value;
+    const num1 = Number(num1Input);
+    const num2 = Number(num2Input);
+
     let passes = true;
     let result = 0;
 
@@ -16,7 +16,7 @@ function addition() {
 
     if (passes) {
         if (result < 0) {
-            document.getElementById("output").innerHTML = String(result);
+            document.getElementById("output").innerHTML = `<p style='color: red;'>${String(result)}</p>`;
         }
         else {
             document.getElementById("output").innerHTML = String(result);
@@ -28,6 +28,11 @@ function addition() {
 }
 
 function subtraction() {
+    const num1Input = document.getElementById("first-number").value;
+    const num2Input = document.getElementById("second-number").value;
+    const num1 = Number(num1Input);
+    const num2 = Number(num2Input);
+
     let passes = true;
     let result = 0;
 
@@ -40,7 +45,7 @@ function subtraction() {
 
     if (passes) {
         if (result < 0) {
-            document.getElementById("output").innerHTML = String(result);
+            document.getElementById("output").innerHTML = `<p style='color: red;'>${String(result)}</p>`;
         }
         else {
             document.getElementById("output").innerHTML = String(result);
@@ -52,6 +57,11 @@ function subtraction() {
 }
 
 function multiplication() {
+    const num1Input = document.getElementById("first-number").value;
+    const num2Input = document.getElementById("second-number").value;
+    const num1 = Number(num1Input);
+    const num2 = Number(num2Input);
+
     let passes = true;
     let result = 0;
 
@@ -64,7 +74,7 @@ function multiplication() {
 
     if (passes) {
         if (result < 0) {
-            document.getElementById("output").innerHTML = String(result);
+            document.getElementById("output").innerHTML = `<p style='color: red;'>${String(result)}</p>`;
         }
         else {
             document.getElementById("output").innerHTML = String(result);
@@ -76,6 +86,11 @@ function multiplication() {
 }
 
 function division() {
+    const num1Input = document.getElementById("first-number").value;
+    const num2Input = document.getElementById("second-number").value;
+    const num1 = Number(num1Input);
+    const num2 = Number(num2Input);
+
     let passes = true;
     let result = 0;
 
@@ -88,7 +103,7 @@ function division() {
 
     if (passes) {
         if (result < 0) {
-            document.getElementById("output").innerHTML = String(result);
+            document.getElementById("output").innerHTML = `<p style='color: red;'>${String(result)}</p>`;
         }
         else {
             document.getElementById("output").innerHTML = String(result);
@@ -100,6 +115,11 @@ function division() {
 }
 
 function power() {
+    const num1Input = document.getElementById("first-number").value;
+    const num2Input = document.getElementById("second-number").value;
+    const num1 = Number(num1Input);
+    const num2 = Number(num2Input);
+
     let passes = true;
     let result = 0;
 
@@ -114,15 +134,14 @@ function power() {
             result = 1;
         }
         else {
+            result = 1
             if (num2 < 0) {
-                result = 1 / num1;
-                for (let i = -1; i >= num2; i--) {
+                for (let i = 0; i > num2; i--) {
                     result *= (1 / num1);
                 }
             }
             else {
-                result = num1;
-                for (let i = -1; i <= num2; i++) {
+                for (let i = 0; i < num2; i++) {
                     result *= num1;
                 }
             }
@@ -131,7 +150,7 @@ function power() {
 
     if (passes) {
         if (result < 0) {
-            document.getElementById("output").innerHTML = String(result);
+            document.getElementById("output").innerHTML = `<p style='color: red;'>${String(result)}</p>`;
         }
         else {
             document.getElementById("output").innerHTML = String(result);
@@ -143,7 +162,7 @@ function power() {
 }
 
 function clearing() {
-    document.getElementById("first-number").innerHTML = "";
-    document.getElementById("second-number").innerHTML = "";
+    document.getElementById("first-number").value = "";
+    document.getElementById("second-number").value = "";
     document.getElementById("output").innerHTML = "";
 }

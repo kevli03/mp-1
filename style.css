@@ -3,13 +3,80 @@
     box-sizing: border-box;
 }
 
-#main-content,
-#error-content {
-    visibility: hidden;
+header{
+
 }
 
-#error-message {
-    color: red;
+nav{
+
+}
+
+nav ul{
+
+}
+
+nav li{
+
+}
+
+nav a{
+
+}
+
+main{
+
+}
+
+.title{
+
+}
+
+main.h4{
+
+}
+
+main.h5{
+
+}
+
+.passage{
+
+}
+
+.details{
+
+}
+
+.short-list{
+
+}
+
+.long-list{
+
+}
+
+main.img {
+    max-width: 50%;
+}
+
+#inputs{
+
+}
+
+#buttons{
+
+}
+
+#output{
+
+}
+
+footer{
+
+}
+
+#credit{
+
 }
 
 @media screen and (max-width: 1000px) {
