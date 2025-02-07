@@ -130,7 +130,7 @@ main h4{
 }
 
 main h5{
-    margin: 0 2vw;
+    margin: 1vh 2vw 0;
     font-size: calc(1px + 2vw);
 }
 
@@ -140,15 +140,48 @@ main h5{
 }
 
 #inputs{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    background-color: powderblue;
+}
 
+#first-label, #second-label{
+    margin: 1vh 0 0;
+}
+
+#first-number, #second-number{
+    width: 80%;
+    padding: 1vh 0;
+    margin: 2vh auto;
+    text-align: center;
+    font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+    font-size: calc(2px + 1.75vw);
+    background-color: white;
 }
 
 #buttons{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
 
+button{
+    text-align: center;
+    background-color: lightgreen;
+    padding: 1vh 1vw;
+    margin: 2vh 1vw;
 }
 
 #output{
-
+    width: 50%;
+    padding: 3.5vh 0;
+    margin: 1vh auto 2.5vh;
+    text-align: center;
+    font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+    font-size: calc(2px + 1.75vw);
+    background-color: white;
 }
 
 footer{
