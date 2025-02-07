@@ -3,68 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="A website featuring Kevin Li's resume and a simple calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Resume | Projects</title>
     </head>
 
     <body>
-        <header>
-            <h1>Kevin Li</h1>
-            <p>Resume</p>
-        </header>
+        <div class="wrapper">
+            <header>
+                <h1>Kevin Li</h1>
+                <p>Resume</p>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="knowledge.html">Areas of Knowledge</a></li>
-                <li><a href="skills.html">Skills</a></li>
-            </ul>
-        </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="knowledge.html">Areas of Knowledge</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </nav>
 
-        <main>
-            <h3 class="title">Projects</h3>
+                <main>
+                    <h3 class="title">Projects</h3>
 
-            <h4>Weather Prediction Trading Pipeline</h4>
-            <h5>Machine Learning</h5>
-            <ul class="short-list">
-                <li>Leveraged Kalshi, a contract-based event trading exchange, for trading based on weather prediction</li>
-                <li>Established a ridge regression model for API-based trading in Python using the scikit-learn and pandas libraries</li>
-            </ul>
+                    <h4>Weather Prediction Trading Pipeline</h4>
+                    <h5>Machine Learning</h5>
+                    <ul class="short-list">
+                        <li>Leveraged Kalshi, a contract-based event trading exchange, for trading based on weather prediction</li>
+                        <li>Established a ridge regression model for API-based trading in Python using the scikit-learn and pandas libraries</li>
+                    </ul>
 
-            <h4>Database Logical-to-Physical Mapping</h4>
-            <h5>Databases</h5>
-            <ul class="short-list">
-                <li>Implemented data insertion and interaction via data marshalling and unmarshalling in Java</li>
-                <li>Mapped parsed SQL statements to appropriate actions within storage engine using the Berkeley DB API</li>
-            </ul>
+                    <h4>Database Logical-to-Physical Mapping</h4>
+                    <h5>Databases</h5>
+                    <ul class="short-list">
+                        <li>Implemented data insertion and interaction via data marshalling and unmarshalling in Java</li>
+                        <li>Mapped parsed SQL statements to appropriate actions within storage engine using the Berkeley DB API</li>
+                    </ul>
 
-            <h4>Calculator</h4>
+                    <h4>Calculator</h4>
 
-            <div id="inputs">
-                <label for="first-number">First Number: </label><input type="text" id="first-number">
-                <label for="second-number">Second Number: </label><input type="text" id="second-number">
+                    <div id="inputs">
+                        <label for="first-number">First Number: </label><input type="text" id="first-number">
+                        <label for="second-number">Second Number: </label><input type="text" id="second-number">
+                    </div>
+
+                    <div id="buttons">
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="power()">**</button>
+                        <button onclick="clearing()">Clear</button>
+                    </div>
+
+                    <h3 id="output"></h3>
+
+                    <script src="calculator.js"></script>
+                </main>
             </div>
 
-            <div id="buttons">
-                <button onclick="addition()">+</button>
-                <button onclick="subtraction()">-</button>
-                <button onclick="multiplication()">*</button>
-                <button onclick="division()">/</button>
-                <button onclick="power()">**</button>
-                <button onclick="clearing()">Clear</button>
-            </div>
-
-            <h3 id="output"></h3>
-
-            <script src="calculator.js"></script>
-        </main>
-
-        <footer>
-            <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
-        </footer>
+            <footer>
+                <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
+            </footer>
+        </div>
     </body>
 </html>

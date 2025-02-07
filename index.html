@@ -3,41 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="A website featuring Kevin Li's resume and a simple calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Resume | Home</title>
     </head>
 
     <body>
-        <header>
-            <h1>Kevin Li</h1>
-            <p>Resume</p>
-        </header>
+        <div class="wrapper">
+            <header>
+                <h1>Kevin Li</h1>
+                <p>Resume</p>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="knowledge.html">Areas of Knowledge</a></li>
-                <li><a href="skills.html">Skills</a></li>
-            </ul>
-        </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="knowledge.html">Areas of Knowledge</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </nav>
 
-        <main>
-            <h3 class="title">Home</h3>
+                <main>
+                    <h3 class="title">Home</h3>
 
-            <img src="pictures/profile.png" alt="Me beside Morse Auditorium at Boston University">
+                    <div id="index-main">
+                        <div id="index-profile">
+                            <img id="image-profile" src="pictures/profile.png" alt="Me beside Morse Auditorium at Boston University">
+                        </div>
 
-            <p class="passage">My name is Kevin Li. I am a senior undergraduate student at Boston University studying Biochemistry & Molecular Biology
-            and Computer Science. I am interested in the nature and origin of life and mind. I am currently conducting origin of life research
-            for my senior honors thesis, studying autocatalytic sets. I will be applying to PhD programs later this year, seeking to continue
-            researching similar topics.<br> <br>This website displays my resume, detailing my experience and knowledge.</p>
-        </main>
+                        <p id="index-passage">My name is Kevin Li. I am a senior undergraduate student at Boston University studying Biochemistry & Molecular Biology
+                        and Computer Science. I am interested in the nature and origin of life and mind. I am currently conducting origin of life research
+                        for my senior honors thesis, studying autocatalytic sets. I will be applying to PhD programs later this year, seeking to continue
+                        researching similar topics.<br> <br>This website displays my resume, detailing my experience.</p>
+                    </div>
+                </main>
+            </div>
 
-        <footer>
-            <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
-        </footer>
+            <footer>
+                <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
+            </footer>
+        </div>
     </body>
 </html>

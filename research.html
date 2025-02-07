@@ -3,40 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="A website featuring Kevin Li's resume and a simple calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Resume | Research</title>
     </head>
 
     <body>
-        <header>
-            <h1>Kevin Li</h1>
-            <p>Resume</p>
-        </header>
+        <div class="wrapper">
+            <header>
+                <h1>Kevin Li</h1>
+                <p>Resume</p>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="knowledge.html">Areas of Knowledge</a></li>
-                <li><a href="skills.html">Skills</a></li>
-            </ul>
-        </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="knowledge.html">Areas of Knowledge</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </nav>
 
-        <main>
-            <h3 class="title">Research</h3>
+                <main>
+                    <h3 class="title">Research</h3>
 
-            <h4>Analysis of the Structure of Simple Autocatalytic Metabolic Networks</h4>
+                    <h4 id="research-title">Analysis of the Structure of Simple Autocatalytic Metabolic Networks</h4>
 
-            <p class="passage"></p>
+                    <p id="research-passage-1">An unanswered question in origin of life research is how complex molecules could have formed in high
+                    concentrations in primitive conditions. Autocatalytic sets have been proposed as a solution to this problem. An autocatalytic
+                    set comprises a set of molecules interacting in chemical reactions, each of which is catalyzed by a molecule within the set.
+                    In this manner, the set is able to sustain the production of its constituents and build complex molecules. We have built
+                    artificial chemistries for computational modeling of catalytic networks in order to investigate properties of autocatalytic sets
+                    built from simple molecules. One aspect we have investigated is the change in autocatalytic set size with varying catalytic
+                    probability, defined as the probability of any given molecule in the network to catalyze any given reaction in the network.
+                    This probability is analogous to the <strong>sparsity</strong> of a catalytic matrix encompassing all possible combinations of
+                    molecules (candidate catalysts) and reactions.</p>
 
-            <img src="pictures/data.png" alt="Autocatalytic set size as a function of sparsity">
-        </main>
+                    <div id="research-main">
+                        <div id="research-data">
+                            <img id="image-data" src="pictures/data.png" alt="Autocatalytic set size as a function of sparsity">
+                        </div>
 
-        <footer>
-            <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
-        </footer>
+                        <p id="research-passage-2">The attached figure displays a graph of autocatalytic set size (presented
+                        as the fraction of the number of reactions in the autocatalytic set over the number of all possible reactions in the network)
+                        against catalytic matrix sparsity. We observe a sigmoidal shape, which is consistent with previous research that has
+                        commented on <em>phase transitions</em> in autocatalytic set size.</p>
+                    </div>
+                </main>
+            </div>
+
+            <footer>
+                <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
+            </footer>
+        </div>
     </body>
 </html>

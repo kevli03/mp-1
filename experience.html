@@ -3,61 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="A website featuring Kevin Li's resume and a simple calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Resume | Experience</title>
     </head>
 
     <body>
-        <header>
-            <h1>Kevin Li</h1>
-            <p>Resume</p>
-        </header>
+        <div class="wrapper">
+            <header>
+                <h1>Kevin Li</h1>
+                <p>Resume</p>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="knowledge.html">Areas of Knowledge</a></li>
-                <li><a href="skills.html">Skills</a></li>
-            </ul>
-        </nav>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="knowledge.html">Areas of Knowledge</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </nav>
 
-        <main>
-            <h3 class="title">Experience</h3>
+                <main>
+                    <h3 class="title">Experience</h3>
 
-            <h4>BU iGEM Team Member</h4>
-            <h5>Boston University</h5>
-            <div class="details">
-                <p>Boston, MA, USA</p>
-                <p>April 2024 - October 2024</p>
+                    <h4>BU iGEM Team Member</h4>
+                    <h5>Boston University</h5>
+                    <div class="details">
+                        <p>Boston, MA, USA</p>
+                        <p>April 2024 - October 2024</p>
+                    </div>
+                    <ul class="short-list">
+                        <li>1 of 5 members of the BU undergraduate team for the 2024 iGEM international synthetic biology competition</li>
+                        <li>Contributed to the creation of a device incorporating microbial biosensors for the detection of heavy metals in liquid samples</li>
+                        <li>As the lead of the biology team, spearheaded the ideation, production, validation, and investigation of bacterial biosensors</li>
+                        <li>As the lead of the software team, created a model to quantify heavy metal concentration from biosensor fluorescence output and a mapping algorithm for sample selection</li>
+                        <li>Presented work at the 2024 iGEM Grand Jamboree in Paris, winning an iGEM Gold Medal</li>
+                        <li>More information can be found here: <a href="https://2024.igem.wiki/bostonu/">BostonU iGEM 2024</a> and here: <a href="https://gitlab.igem.org/2024/software-tools/bostonu"> BostonU 2024 Software</a></li>
+                    </ul>
+
+                    <h4>Viral Vaccines R&D Intern</h4>
+                    <h5>Pfizer</h5>
+                    <div class="details">
+                        <p>Pearl River, NY, USA</p>
+                        <p>June 2023 - August 2023</p>
+                    </div>
+                    <ul class="short-list">
+                        <li>Contributed to the improvement and validation of molecular assays for viral vaccine investigation</li>
+                        <li>Supported molecular cloning project for vaccine production</li>
+                        <li>Presented work at department-wide meeting</li>
+                    </ul>
+                </main>
             </div>
-            <ul class="short-list">
-                <li>1 of 5 members of the BU undergraduate team for the 2024 iGEM international synthetic biology competition</li>
-                <li>Contributed to the creation of a device incorporating microbial biosensors for the detection of heavy metals in liquid samples</li>
-                <li>As the lead of the biology team, spearheaded the ideation, production, validation, and investigation of bacterial biosensors</li>
-                <li>As the lead of the software team, created a model to quantify heavy metal concentration from biosensor fluorescence output and a mapping algorithm for sample selection</li>
-                <li>Presented work at the 2024 iGEM Grand Jamboree in Paris, winning an iGEM Gold Medal</li>
-                <li>More information can be found here: <a href="https://2024.igem.wiki/bostonu/">BostonU iGEM 2024</a> and here: <a href="https://gitlab.igem.org/2024/software-tools/bostonu"> BostonU 2024 Software</a></li>
-            </ul>
 
-            <h4>Viral Vaccines R&D Intern</h4>
-            <h5>Pfizer</h5>
-            <div class="details">
-                <p>Pearl River, NY, USA</p>
-                <p>June 2023 - August 2023</p>
-            </div>
-            <ul class="short-list">
-                <li>Contributed to the improvement and validation of molecular assays for viral vaccine investigation</li>
-                <li>Supported molecular cloning project for vaccine production</li>
-                <li>Presented work at department-wide meeting</li>
-            </ul>
-        </main>
-
-        <footer>
-            <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
-        </footer>
+            <footer>
+                <p>All rights reserved by Kevin Li <a href="credits.html">Credits</a> &copy;</p>
+            </footer>
+        </div>
     </body>
 </html>
