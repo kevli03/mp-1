@@ -20,7 +20,6 @@ header{
 .container{
     display: flex;
     flex-direction: row;
-    position: relative;
     background-color: lightsteelblue;
 }
 
@@ -54,6 +53,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 70%;
+    padding: 0 0 2vh;
     background-color: peachpuff;
     font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
 }
@@ -125,12 +125,12 @@ main{
 }
 
 main h4{
-    margin: 2vh 2vw 0;
+    margin: 2vh 2vw 0.5vh;
     font-size: calc(1px + 2.5vw);
 }
 
 main h5{
-    margin: 1vh 2vw 0;
+    margin: 1vh 2vw;
     font-size: calc(1px + 2vw);
 }
 
@@ -149,6 +149,8 @@ main h5{
 
 #first-label, #second-label{
     margin: 1vh 0 0;
+    font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+    font-size: calc(2px + 1.25vw);
 }
 
 #first-number, #second-number{
@@ -171,7 +173,7 @@ button{
     text-align: center;
     background-color: lightgreen;
     padding: 1vh 1vw;
-    margin: 2vh 1vw;
+    margin: 2.5vh 1vw 2vh;
 }
 
 #output{
@@ -199,7 +201,6 @@ footer{
 
 @media screen and (max-width: 750px) {
     header{
-        padding: 1vh 1vw;
         text-align: center;
     }
 
@@ -215,23 +216,65 @@ footer{
     nav ul{
         display: flex;
         flex-direction: row;
+        text-align: center;
     }
 
     nav li{
-        width: 85%;
-        padding: 1vh 0;
-        margin: 2vh auto;
-        font-size: calc(2px + 1.75vw);
+        width: 10%;
+        padding: 0.5vh 1vw;
+        margin: 1vh auto;
+        font-size: calc(1px + 1vw);
     }
 
     main{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
     }
 
+    .title{
+        margin: 2vh 0 1vh;
+    }
+
+    main h4{
+        margin: 1vh 2vw 0.25vh;
+    }
+
+    main h5{
+        margin: 0.25vh 2vw;
+    }
+
+    .details{
+        margin: 0 2vw;
+    }
+
+    .short-list, .long-list{
+        margin: 0 0;
+    }
+
+    #first-label, #second-label{
+        font-size: calc(2px + 2.5vw);
+        margin: 0.5vh 1vw 0;
+    }
+
+    #first-number, #second-number{
+        padding: 0.5vh 0;
+        margin: 1.25vh auto;
+    }
+
+    button{
+        padding: 0.5vh 1vw;
+        margin: 2vh 1vw 1.25vh;
+    }
+
+    #output{
+        width: 32%;
+        padding: 2vh 0;
+        margin: 1vh auto 2.5vh;
+    }
+
     footer{
-        padding: 0.7vh 0.7vw;
-        font-size: calc(1px + 1.5vw);
+        padding: 1vh 0.7vw;
+        font-size: calc(1px + 2vw);
     }
 }
